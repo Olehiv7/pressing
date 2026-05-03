@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Деталі програми - Pressing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="program-details-page">
+
+    <div class="container">
+        <header class="header">
+            <div class="logo"><img src="images/logo.png" alt="Логотип"></div>
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="index.html#about">Про нас</a>
+    <a href="index.html#programs">Програми</a>
+</nav>
+        </header>
+
+        <section class="program-info">
+            <h1 id="program-title">Завантаження...</h1>
+            <p id="program-description"></p>
+            
+            <div class="program-details-grid">
+                <div class="detail-item">
+                    <strong>Вік:</strong> <span id="program-age"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Фокус:</strong> <span id="program-focus"></span>
+                </div>
+            </div>
+
+            <a href="signup.html" class="btn" style="margin-top: 30px; text-decoration: none;">Записатися на пробне тренування</a>
+            <br>
+            <a href="index.html" class="back-link">← Повернутися на головну</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Викликаємо функцію завантаження даних при відкритті сторінки
+        window.onload = loadProgramDetails;
+    </script>
+</body>
+</html>

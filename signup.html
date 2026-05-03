@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Запис на тренування</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="signup-page">
+
+<div class="signup-container">
+
+    <div class="signup-box">
+        <h1>Запис на тренування ⚽</h1>
+        <p>Заповніть форму і ми зв'яжемось з вами</p>
+
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="Ім'я" required>
+            <input type="tel" placeholder="Телефон" required>
+
+            <select required>
+                <option value="">Оберіть програму</option>
+                <option>U8 (6-8 років)</option>
+                <option>U12 (9-12 років)</option>
+                <option>U16 (13-16 років)</option>
+            </select>
+
+            <button type="submit">Відправити</button>
+        </form>
+
+        <button class="back-btn" onclick="goBack()">← Назад</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
